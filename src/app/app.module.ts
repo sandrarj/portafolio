@@ -10,6 +10,8 @@ import { AboutComponent } from './components/about/about.component';
 import { DocsComponent } from './components/docs/docs.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductoComponent } from './components/producto/producto.component';
+import { InfomationService } from './services/infomation.service';
+import { HttpModule } from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -24,9 +26,12 @@ import { ProductoComponent } from './components/producto/producto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ 
+    InfomationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
