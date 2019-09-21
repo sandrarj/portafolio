@@ -8,7 +8,7 @@ export class InfomationService {
   info:any = {};
   load:boolean = false;
   loadAbout:boolean = false;
-  equipo:any = [];
+  equipo:any[] = [];
   constructor(private Http: Http) {
     this.cargar_info();
     this.cargar_sobre_nosotros();
